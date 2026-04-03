@@ -1,0 +1,61 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.pytest_tmp/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Internal research operations and planning docs
+/AGENTS.md
+/docs/CLAIMS_MATRIX.md
+/docs/EVALUATION_PLAN.md
+/docs/EVIDENCE_TEMPLATE.md
+/docs/EXECUTION_RULES.md
+/docs/FORMALISM_PSEUDOCODE_AND_PROOF_OBLIGATIONS.md
+/docs/HARD_PARTS_TRANSFER.md
+/docs/IMPLEMENTATION_PLAN.md
+/docs/PAPER_OUTLINE.md
+/docs/RESEARCH_BRIEF.md
+/docs/STATUS.md
+
+# Review bundles and scratch artifacts
+/artifacts/review/
+/artifacts/test_tmp/
+*.zip
+
+# Generated experiment outputs
+/results/
+
+# Paper build byproducts
+/paper/*.aux
+/paper/*.bbl
+/paper/*.blg
+/paper/*.fdb_latexmk
+/paper/*.fls
+/paper/*.log
+/paper/*.out
+/paper/*.synctex.gz
+/paper/*.toc
+/paper/*.lof
+/paper/*.lot
+/paper/*.nav
+/paper/*.snm
+/paper/*.vrb
+/paper/pdf_preview*/

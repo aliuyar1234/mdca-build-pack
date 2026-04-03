@@ -1,0 +1,25 @@
+setting:
+  id: gpt2_ioi
+  variant: base
+  description: Smoke config for the GPT-2-small IOI S3 setting.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 20
+  dataset: 20
+  model_init: 20
+  candidate_search: 20
+  bootstrap: 20
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: smoke
+  setting_scope: S3

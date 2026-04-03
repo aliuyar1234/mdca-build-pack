@@ -1,0 +1,56 @@
+setting:
+  id: gpt2_ioi
+  variant: full
+  description: Full first-slice config for the GPT-2-small IOI S3 setting.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 31
+  dataset: 31
+  model_init: 31
+  candidate_search: 31
+  bootstrap: 31
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: full
+  setting_scope: S3
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+      - H_first
+      - H_second
+      - H_rep
+    site_budgets:
+      - 1
+    map_families:
+      linear_dense:
+        - default_dense
+      linear_sparse_l1:
+        - 1.0e-4
+        - 1.0e-3
+        - 1.0e-2
+      linear_lowrank:
+        - 4
+        - 8
+        - 16
+      mlp1_relu:
+        - 32
+        - 64
+        - 128
+  null_families:
+    - random_site
+    - shuffled_pair
+  shuffled_pair_seed: 0
+  training:
+    linear_epochs: 20
+    mlp_epochs: 25
+    learning_rate: 0.05

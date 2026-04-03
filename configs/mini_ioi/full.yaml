@@ -1,0 +1,63 @@
+setting:
+  id: mini_ioi
+  variant: full
+  description: Full locked-slice config for the miniature IOI S2 setting.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 21
+  dataset: 21
+  model_init: 21
+  candidate_search: 21
+  bootstrap: 21
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: full
+  setting_scope: S2
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+      - H_first
+      - H_second
+      - H_rep
+    site_budgets:
+      - 1
+    map_families:
+      linear_dense:
+        - default_dense
+      linear_sparse_l1:
+        - 1.0e-4
+        - 1.0e-3
+        - 1.0e-2
+      linear_lowrank:
+        - 4
+        - 8
+        - 16
+      mlp1_relu:
+        - 32
+        - 64
+        - 128
+  null_families:
+    - random_site
+    - shuffled_pair
+    - untrained_model
+  shuffled_pair_seed: 0
+  untrained_model_seed: 121
+  training:
+    linear_epochs: 20
+    mlp_epochs: 25
+    learning_rate: 0.05
+  transformer_training:
+    epochs: 200
+    batch_size: 16
+    learning_rate: 3.0e-3
+    weight_decay: 0.0

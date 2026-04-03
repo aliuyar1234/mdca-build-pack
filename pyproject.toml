@@ -1,0 +1,9 @@
+[project]
+name = "mdca-build-pack"
+version = "0.1.0"
+description = "Bootstrap scaffold for control-calibrated minimum-description causal abstractions."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:tmpdir -p no:cacheprovider"

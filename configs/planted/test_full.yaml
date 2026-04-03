@@ -1,0 +1,43 @@
+setting:
+  id: planted
+  variant: test_full
+  description: Fast M3 planted config with all primary null families.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 5
+  dataset: 5
+  model_init: 19
+  candidate_search: 5
+  bootstrap: 5
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: full
+  setting_scope: S1
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+    site_budgets:
+      - 1
+    map_families:
+      linear_dense:
+        - default_dense
+  null_families:
+    - random_site
+    - shuffled_pair
+    - untrained_model
+  shuffled_pair_seed: 0
+  untrained_model_seed: 19
+  training:
+    linear_epochs: 15
+    mlp_epochs: 15
+    learning_rate: 0.05

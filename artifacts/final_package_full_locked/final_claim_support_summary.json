@@ -1,0 +1,547 @@
+{
+  "evidence_scope": {
+    "all_settings_cover_full_locked_candidate_pool": true,
+    "settings_missing_full_locked_candidate_pool": []
+  },
+  "interpretive_caveats": {
+    "oracle_backed_planted_recovery_failure": true,
+    "settings_where_best_frontier_defined_candidate_fails_best_bits_gate": [
+      "planted",
+      "mini_ioi",
+      "gpt2_ioi"
+    ],
+    "settings_with_frontier_ineligible_global_best": [
+      "planted",
+      "mini_ioi",
+      "gpt2_ioi"
+    ],
+    "settings_with_sparse_valid_frontier": [
+      "gpt2_ioi"
+    ],
+    "unevaluable_cells_by_setting": {
+      "gpt2_ioi": 28,
+      "mini_ioi": 4,
+      "planted": 0
+    }
+  },
+  "recommended_statuses": {
+    "C1": "weakened",
+    "C2": "unsupported",
+    "C3": "supported",
+    "C4": "unsupported",
+    "C5": "unsupported",
+    "C6": "supported",
+    "C7": "partially supported",
+    "C8": "supported",
+    "paper_shape": "negative_result"
+  },
+  "settings": [
+    {
+      "best_candidate_changed": false,
+      "candidate_pool_scope": {
+        "candidate_cell_coverage": 1.0,
+        "configured_candidate_cells": 120,
+        "configured_candidate_cells_match_recorded_total": true,
+        "configured_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "configured_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "configured_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "covers_full_locked_candidate_pool": true,
+        "covers_locked_high_level_models": true,
+        "covers_locked_map_family_hypergrid": true,
+        "covers_locked_site_budgets": true,
+        "locked_candidate_cells": 120,
+        "locked_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "locked_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "locked_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "missing_high_level_models": [],
+        "missing_map_family_hyperparameters": {},
+        "missing_site_budgets": [],
+        "recorded_candidate_records": 120,
+        "recorded_total_candidate_cells": 120,
+        "recorded_unevaluable_candidate_cells": 0,
+        "scope_label": "full_locked_candidate_pool"
+      },
+      "oracle": {
+        "best_candidate_frontier_eligible": true,
+        "exact_site_match": true,
+        "frontier_defined_shift": true,
+        "frontier_defined_test": true,
+        "g_shift": 0.0,
+        "g_test": 0.0,
+        "g_test_lcb95": 0.0,
+        "oracle_id": "A_star",
+        "support_reason": "test_gap_lcb_nonpositive",
+        "supported": false,
+        "total_overlap_count": 6
+      },
+      "primary": {
+        "best_candidate_frontier_eligible": false,
+        "best_candidate_id": "baad13f786d42d8c",
+        "best_candidate_support_reason": "frontier_undefined",
+        "best_frontier_defined_candidate_g_shift": 0.0,
+        "best_frontier_defined_candidate_g_test": 0.0,
+        "best_frontier_defined_candidate_id": "4cf45f8cdae96183",
+        "best_frontier_defined_candidate_within_best_bits": false,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "shift_domain": [
+          2925.0,
+          11395.0
+        ],
+        "shift_valid_bins": 3,
+        "supported_class_ids": [],
+        "test_domain": [
+          2925.0,
+          11395.0
+        ],
+        "test_valid_bins": 3
+      },
+      "primary_run_dir": "results\\20260403_074926_planted_full_locked",
+      "proposal_coverage": {
+        "by_map_family": {
+          "linear_dense": {
+            "total": 12,
+            "unevaluable": 0
+          },
+          "linear_lowrank": {
+            "total": 36,
+            "unevaluable": 0
+          },
+          "linear_sparse_l1": {
+            "total": 36,
+            "unevaluable": 0
+          },
+          "mlp1_relu": {
+            "total": 36,
+            "unevaluable": 0
+          }
+        },
+        "by_site_budget": {
+          "1": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "2": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "4": {
+            "total": 40,
+            "unevaluable": 0
+          }
+        },
+        "n_total_cells": 120,
+        "n_unevaluable_cells": 0,
+        "unevaluable_cells_by_site_budget_and_map_family": {
+          "b=1:linear_dense": 0,
+          "b=1:linear_lowrank": 0,
+          "b=1:linear_sparse_l1": 0,
+          "b=1:mlp1_relu": 0,
+          "b=2:linear_dense": 0,
+          "b=2:linear_lowrank": 0,
+          "b=2:linear_sparse_l1": 0,
+          "b=2:mlp1_relu": 0,
+          "b=4:linear_dense": 0,
+          "b=4:linear_lowrank": 0,
+          "b=4:linear_sparse_l1": 0,
+          "b=4:mlp1_relu": 0
+        }
+      },
+      "robustness": {
+        "best_candidate_frontier_eligible": false,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "supported_class_ids": []
+      },
+      "robustness_run_dir": "results\\20260403_074926_planted_full_locked\\robustness_quantized",
+      "setting_id": "planted",
+      "support_changed": false
+    },
+    {
+      "best_candidate_changed": false,
+      "candidate_pool_scope": {
+        "candidate_cell_coverage": 1.0,
+        "configured_candidate_cells": 120,
+        "configured_candidate_cells_match_recorded_total": true,
+        "configured_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "configured_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "configured_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "covers_full_locked_candidate_pool": true,
+        "covers_locked_high_level_models": true,
+        "covers_locked_map_family_hypergrid": true,
+        "covers_locked_site_budgets": true,
+        "locked_candidate_cells": 120,
+        "locked_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "locked_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "locked_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "missing_high_level_models": [],
+        "missing_map_family_hyperparameters": {},
+        "missing_site_budgets": [],
+        "recorded_candidate_records": 116,
+        "recorded_total_candidate_cells": 120,
+        "recorded_unevaluable_candidate_cells": 4,
+        "scope_label": "full_locked_candidate_pool"
+      },
+      "oracle": null,
+      "primary": {
+        "best_candidate_frontier_eligible": false,
+        "best_candidate_id": "6f74a55b774f2533",
+        "best_candidate_support_reason": "frontier_undefined",
+        "best_frontier_defined_candidate_g_shift": -15.582107852061,
+        "best_frontier_defined_candidate_g_test": -0.1548902260915881,
+        "best_frontier_defined_candidate_id": "bdaec4c690521721",
+        "best_frontier_defined_candidate_within_best_bits": false,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "shift_domain": [
+          4001.0,
+          15875.0
+        ],
+        "shift_valid_bins": 3,
+        "supported_class_ids": [],
+        "test_domain": [
+          4001.0,
+          15875.0
+        ],
+        "test_valid_bins": 3
+      },
+      "primary_run_dir": "results\\20260403_074928_mini_ioi_full_locked",
+      "proposal_coverage": {
+        "by_map_family": {
+          "linear_dense": {
+            "total": 12,
+            "unevaluable": 0
+          },
+          "linear_lowrank": {
+            "total": 36,
+            "unevaluable": 4
+          },
+          "linear_sparse_l1": {
+            "total": 36,
+            "unevaluable": 0
+          },
+          "mlp1_relu": {
+            "total": 36,
+            "unevaluable": 0
+          }
+        },
+        "by_site_budget": {
+          "1": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "2": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "4": {
+            "total": 40,
+            "unevaluable": 4
+          }
+        },
+        "n_total_cells": 120,
+        "n_unevaluable_cells": 4,
+        "unevaluable_cells_by_site_budget_and_map_family": {
+          "b=1:linear_dense": 0,
+          "b=1:linear_lowrank": 0,
+          "b=1:linear_sparse_l1": 0,
+          "b=1:mlp1_relu": 0,
+          "b=2:linear_dense": 0,
+          "b=2:linear_lowrank": 0,
+          "b=2:linear_sparse_l1": 0,
+          "b=2:mlp1_relu": 0,
+          "b=4:linear_dense": 0,
+          "b=4:linear_lowrank": 4,
+          "b=4:linear_sparse_l1": 0,
+          "b=4:mlp1_relu": 0
+        }
+      },
+      "robustness": {
+        "best_candidate_frontier_eligible": true,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "supported_class_ids": []
+      },
+      "robustness_run_dir": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized",
+      "setting_id": "mini_ioi",
+      "support_changed": false
+    },
+    {
+      "best_candidate_changed": false,
+      "candidate_pool_scope": {
+        "candidate_cell_coverage": 1.0,
+        "configured_candidate_cells": 120,
+        "configured_candidate_cells_match_recorded_total": true,
+        "configured_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "configured_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "configured_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "covers_full_locked_candidate_pool": true,
+        "covers_locked_high_level_models": true,
+        "covers_locked_map_family_hypergrid": true,
+        "covers_locked_site_budgets": true,
+        "locked_candidate_cells": 120,
+        "locked_high_level_model_ids": [
+          "H_true_other",
+          "H_first",
+          "H_second",
+          "H_rep"
+        ],
+        "locked_map_family_grid": {
+          "linear_dense": [
+            "default_dense"
+          ],
+          "linear_lowrank": [
+            4,
+            8,
+            16
+          ],
+          "linear_sparse_l1": [
+            0.0001,
+            0.001,
+            0.01
+          ],
+          "mlp1_relu": [
+            32,
+            64,
+            128
+          ]
+        },
+        "locked_site_budgets": [
+          1,
+          2,
+          4
+        ],
+        "missing_high_level_models": [],
+        "missing_map_family_hyperparameters": {},
+        "missing_site_budgets": [],
+        "recorded_candidate_records": 92,
+        "recorded_total_candidate_cells": 120,
+        "recorded_unevaluable_candidate_cells": 28,
+        "scope_label": "full_locked_candidate_pool"
+      },
+      "oracle": null,
+      "primary": {
+        "best_candidate_frontier_eligible": false,
+        "best_candidate_id": "e4844675b6bba7c3",
+        "best_candidate_support_reason": "frontier_undefined",
+        "best_frontier_defined_candidate_g_shift": -37.015904391262076,
+        "best_frontier_defined_candidate_g_test": -2.3398500028846243,
+        "best_frontier_defined_candidate_id": "50a1872593995432",
+        "best_frontier_defined_candidate_within_best_bits": false,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "shift_domain": [
+          13539.0,
+          27051.0
+        ],
+        "shift_valid_bins": 2,
+        "supported_class_ids": [],
+        "test_domain": [
+          13539.0,
+          27051.0
+        ],
+        "test_valid_bins": 2
+      },
+      "primary_run_dir": "results\\20260403_074932_gpt2_ioi_full_locked_cuda",
+      "proposal_coverage": {
+        "by_map_family": {
+          "linear_dense": {
+            "total": 12,
+            "unevaluable": 4
+          },
+          "linear_lowrank": {
+            "total": 36,
+            "unevaluable": 8
+          },
+          "linear_sparse_l1": {
+            "total": 36,
+            "unevaluable": 8
+          },
+          "mlp1_relu": {
+            "total": 36,
+            "unevaluable": 8
+          }
+        },
+        "by_site_budget": {
+          "1": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "2": {
+            "total": 40,
+            "unevaluable": 0
+          },
+          "4": {
+            "total": 40,
+            "unevaluable": 28
+          }
+        },
+        "n_total_cells": 120,
+        "n_unevaluable_cells": 28,
+        "unevaluable_cells_by_site_budget_and_map_family": {
+          "b=1:linear_dense": 0,
+          "b=1:linear_lowrank": 0,
+          "b=1:linear_sparse_l1": 0,
+          "b=1:mlp1_relu": 0,
+          "b=2:linear_dense": 0,
+          "b=2:linear_lowrank": 0,
+          "b=2:linear_sparse_l1": 0,
+          "b=2:mlp1_relu": 0,
+          "b=4:linear_dense": 4,
+          "b=4:linear_lowrank": 8,
+          "b=4:linear_sparse_l1": 8,
+          "b=4:mlp1_relu": 8
+        }
+      },
+      "robustness": {
+        "best_candidate_frontier_eligible": false,
+        "control_calibration_changed_decision": true,
+        "n_supported": 0,
+        "supported_class_ids": []
+      },
+      "robustness_run_dir": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized",
+      "setting_id": "gpt2_ioi",
+      "support_changed": false
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "figures": [
+    {
+      "caption": "planted primary-codebook test frontier",
+      "id": "planted_frontier_test_primary",
+      "path": "results\\20260403_074926_planted_full_locked\\frontier_test.png"
+    },
+    {
+      "caption": "planted primary-codebook shift frontier",
+      "id": "planted_frontier_shift_primary",
+      "path": "results\\20260403_074926_planted_full_locked\\frontier_shift.png"
+    },
+    {
+      "caption": "planted quantized-codebook test frontier",
+      "id": "planted_frontier_test_quantized",
+      "path": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\frontier_test.png"
+    },
+    {
+      "caption": "planted quantized-codebook shift frontier",
+      "id": "planted_frontier_shift_quantized",
+      "path": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\frontier_shift.png"
+    },
+    {
+      "caption": "mini_ioi primary-codebook test frontier",
+      "id": "mini_ioi_frontier_test_primary",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\frontier_test.png"
+    },
+    {
+      "caption": "mini_ioi primary-codebook shift frontier",
+      "id": "mini_ioi_frontier_shift_primary",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\frontier_shift.png"
+    },
+    {
+      "caption": "mini_ioi quantized-codebook test frontier",
+      "id": "mini_ioi_frontier_test_quantized",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\frontier_test.png"
+    },
+    {
+      "caption": "mini_ioi quantized-codebook shift frontier",
+      "id": "mini_ioi_frontier_shift_quantized",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\frontier_shift.png"
+    },
+    {
+      "caption": "gpt2_ioi primary-codebook test frontier",
+      "id": "gpt2_ioi_frontier_test_primary",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\frontier_test.png"
+    },
+    {
+      "caption": "gpt2_ioi primary-codebook shift frontier",
+      "id": "gpt2_ioi_frontier_shift_primary",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\frontier_shift.png"
+    },
+    {
+      "caption": "gpt2_ioi quantized-codebook test frontier",
+      "id": "gpt2_ioi_frontier_test_quantized",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\frontier_test.png"
+    },
+    {
+      "caption": "gpt2_ioi quantized-codebook shift frontier",
+      "id": "gpt2_ioi_frontier_shift_quantized",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\frontier_shift.png"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "planted primary-codebook support table",
+      "id": "planted_support_primary",
+      "path": "results\\20260403_074926_planted_full_locked\\support_table.json"
+    },
+    {
+      "caption": "planted quantized-codebook support table",
+      "id": "planted_support_quantized",
+      "path": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\support_table.json"
+    },
+    {
+      "caption": "planted primary-vs-quantized comparison summary",
+      "id": "planted_comparison_quantized",
+      "path": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\robustness_comparison.json"
+    },
+    {
+      "caption": "mini_ioi primary-codebook support table",
+      "id": "mini_ioi_support_primary",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\support_table.json"
+    },
+    {
+      "caption": "mini_ioi quantized-codebook support table",
+      "id": "mini_ioi_support_quantized",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\support_table.json"
+    },
+    {
+      "caption": "mini_ioi primary-vs-quantized comparison summary",
+      "id": "mini_ioi_comparison_quantized",
+      "path": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\robustness_comparison.json"
+    },
+    {
+      "caption": "gpt2_ioi primary-codebook support table",
+      "id": "gpt2_ioi_support_primary",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\support_table.json"
+    },
+    {
+      "caption": "gpt2_ioi quantized-codebook support table",
+      "id": "gpt2_ioi_support_quantized",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\support_table.json"
+    },
+    {
+      "caption": "gpt2_ioi primary-vs-quantized comparison summary",
+      "id": "gpt2_ioi_comparison_quantized",
+      "path": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\robustness_comparison.json"
+    },
+    {
+      "caption": "Final cross-setting claim support summary",
+      "id": "final_claim_support_summary",
+      "path": "artifacts\\final_package_full_locked\\final_claim_support_summary.json"
+    }
+  ]
+}

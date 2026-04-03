@@ -1,0 +1,92 @@
+{
+  "figure_table_manifest": "artifacts\\final_package_full_locked\\figure_table_manifest.json",
+  "final_claim_support_summary": "artifacts\\final_package_full_locked\\final_claim_support_summary.json",
+  "settings": [
+    {
+      "artifacts": {
+        "acceptance_summary": "results\\20260403_074926_planted_full_locked\\acceptance_summary.json",
+        "candidate_pool_scope": "results\\20260403_074926_planted_full_locked\\candidate_pool_scope.json",
+        "candidate_records": "results\\20260403_074926_planted_full_locked\\candidate_records.json",
+        "candidate_table": "results\\20260403_074926_planted_full_locked\\candidate_table.json",
+        "config_snapshot": "results\\20260403_074926_planted_full_locked\\config_snapshot.yaml",
+        "frontier_shift": "results\\20260403_074926_planted_full_locked\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074926_planted_full_locked\\frontier_test.json",
+        "null_records": "results\\20260403_074926_planted_full_locked\\null_records.json",
+        "null_search_logs": "results\\20260403_074926_planted_full_locked\\null_search_logs.json",
+        "proposal_logs": "results\\20260403_074926_planted_full_locked\\proposal_logs.json",
+        "support_table": "results\\20260403_074926_planted_full_locked\\support_table.json"
+      },
+      "oracle_artifacts": {
+        "oracle_candidate_record": "results\\20260403_074926_planted_full_locked\\oracle_candidate_record.json",
+        "oracle_site_overlap": "results\\20260403_074926_planted_full_locked\\oracle_site_overlap.json",
+        "oracle_support": "results\\20260403_074926_planted_full_locked\\oracle_support.json"
+      },
+      "primary_run_dir": "results\\20260403_074926_planted_full_locked",
+      "robustness_artifacts": {
+        "acceptance_summary": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\acceptance_summary.json",
+        "candidate_records": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\candidate_records.json",
+        "frontier_shift": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\frontier_test.json",
+        "null_records": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\null_records.json",
+        "robustness_comparison": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\robustness_comparison.json",
+        "run_dir": "results\\20260403_074926_planted_full_locked\\robustness_quantized",
+        "support_table": "results\\20260403_074926_planted_full_locked\\robustness_quantized\\support_table.json"
+      },
+      "setting_id": "planted"
+    },
+    {
+      "artifacts": {
+        "acceptance_summary": "results\\20260403_074928_mini_ioi_full_locked\\acceptance_summary.json",
+        "candidate_pool_scope": "results\\20260403_074928_mini_ioi_full_locked\\candidate_pool_scope.json",
+        "candidate_records": "results\\20260403_074928_mini_ioi_full_locked\\candidate_records.json",
+        "candidate_table": "results\\20260403_074928_mini_ioi_full_locked\\candidate_table.json",
+        "config_snapshot": "results\\20260403_074928_mini_ioi_full_locked\\config_snapshot.yaml",
+        "frontier_shift": "results\\20260403_074928_mini_ioi_full_locked\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074928_mini_ioi_full_locked\\frontier_test.json",
+        "null_records": "results\\20260403_074928_mini_ioi_full_locked\\null_records.json",
+        "null_search_logs": "results\\20260403_074928_mini_ioi_full_locked\\null_search_logs.json",
+        "proposal_logs": "results\\20260403_074928_mini_ioi_full_locked\\proposal_logs.json",
+        "support_table": "results\\20260403_074928_mini_ioi_full_locked\\support_table.json"
+      },
+      "primary_run_dir": "results\\20260403_074928_mini_ioi_full_locked",
+      "robustness_artifacts": {
+        "acceptance_summary": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\acceptance_summary.json",
+        "candidate_records": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\candidate_records.json",
+        "frontier_shift": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\frontier_test.json",
+        "null_records": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\null_records.json",
+        "robustness_comparison": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\robustness_comparison.json",
+        "run_dir": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized",
+        "support_table": "results\\20260403_074928_mini_ioi_full_locked\\robustness_quantized\\support_table.json"
+      },
+      "setting_id": "mini_ioi"
+    },
+    {
+      "artifacts": {
+        "acceptance_summary": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\acceptance_summary.json",
+        "candidate_pool_scope": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\candidate_pool_scope.json",
+        "candidate_records": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\candidate_records.json",
+        "candidate_table": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\candidate_table.json",
+        "config_snapshot": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\config_snapshot.yaml",
+        "frontier_shift": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\frontier_test.json",
+        "null_records": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\null_records.json",
+        "null_search_logs": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\null_search_logs.json",
+        "proposal_logs": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\proposal_logs.json",
+        "support_table": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\support_table.json"
+      },
+      "primary_run_dir": "results\\20260403_074932_gpt2_ioi_full_locked_cuda",
+      "robustness_artifacts": {
+        "acceptance_summary": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\acceptance_summary.json",
+        "candidate_records": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\candidate_records.json",
+        "frontier_shift": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\frontier_shift.json",
+        "frontier_test": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\frontier_test.json",
+        "null_records": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\null_records.json",
+        "robustness_comparison": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\robustness_comparison.json",
+        "run_dir": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized",
+        "support_table": "results\\20260403_074932_gpt2_ioi_full_locked_cuda\\robustness_quantized\\support_table.json"
+      },
+      "setting_id": "gpt2_ioi"
+    }
+  ]
+}

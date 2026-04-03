@@ -1,0 +1,37 @@
+setting:
+  id: planted
+  variant: test_score
+  description: Fast test config for M2 planted candidate scoring.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 4
+  dataset: 4
+  model_init: 4
+  candidate_search: 4
+  bootstrap: 4
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: score_only
+  setting_scope: S1
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+    site_budgets:
+      - 2
+    map_families:
+      linear_dense:
+        - default_dense
+  training:
+    linear_epochs: 20
+    mlp_epochs: 20
+    learning_rate: 0.05

@@ -1,0 +1,25 @@
+setting:
+  id: planted
+  variant: smoke
+  description: Smoke scaffold config for the planted S1 setting.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 1
+  dataset: 1
+  model_init: 1
+  candidate_search: 1
+  bootstrap: 1
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: smoke
+  setting_scope: S1

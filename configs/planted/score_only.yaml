@@ -1,0 +1,47 @@
+setting:
+  id: planted
+  variant: score_only
+  description: Score-only scaffold config for the planted S1 setting.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 2
+  dataset: 2
+  model_init: 2
+  candidate_search: 2
+  bootstrap: 2
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: score_only
+  setting_scope: S1
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+      - H_first
+      - H_second
+      - H_rep
+    site_budgets:
+      - 1
+      - 2
+    map_families:
+      linear_dense:
+        - default_dense
+      linear_sparse_l1:
+        - 1.0e-3
+      linear_lowrank:
+        - 4
+      mlp1_relu:
+        - 32
+  training:
+    linear_epochs: 35
+    mlp_epochs: 50
+    learning_rate: 0.05

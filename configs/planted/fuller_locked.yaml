@@ -1,0 +1,53 @@
+setting:
+  id: planted
+  variant: fuller_locked
+  description: Fuller locked S1 rerun before M4 with restored lowrank and both site budgets.
+paths:
+  results_dir: results
+  artifacts_dir: artifacts
+method:
+  bootstrap_n_reps: 1000
+  null_bin_width_bits: 2
+  null_min_family_count: 5
+  frontier_balance_seed: 0
+seeds:
+  global: 3
+  dataset: 3
+  model_init: 17
+  candidate_search: 3
+  bootstrap: 3
+runtime:
+  device: cpu
+  dtype: float32
+  num_workers: 0
+extras:
+  phase: full
+  setting_scope: S1
+  candidate_pool:
+    high_level_models:
+      - H_true_other
+      - H_first
+      - H_second
+      - H_rep
+    site_budgets:
+      - 1
+      - 2
+    map_families:
+      linear_dense:
+        - default_dense
+      linear_lowrank:
+        - 4
+      linear_sparse_l1:
+        - 1.0e-3
+      mlp1_relu:
+        - 32
+  null_families:
+    - random_site
+    - shuffled_pair
+    - untrained_model
+  shuffled_pair_seed: 0
+  untrained_model_seed: 17
+  training:
+    linear_epochs: 25
+    mlp_epochs: 30
+    learning_rate: 0.05
