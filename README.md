@@ -99,4 +99,4 @@ If you cite this work before a final arXiv identifier or venue record is availab
 
 ## License
 
-No license file has been added yet. Public-use terms should be chosen explicitly before broader reuse.
+This repository is released under the [MIT License](LICENSE).
