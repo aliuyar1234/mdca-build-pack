@@ -707,7 +707,7 @@ If positive framing fails, pivot to a negative paper on the limits of control-ca
 - a large supported equivalence class weakens uniqueness but does **not** invalidate the paper,
 - no supported candidate in the real-model case is a serious risk and must be reported honestly.
 
-## Wrong shortcuts Codex must not take
+## Wrong shortcuts the implementation must not take
 - do not change the output from token identity to correctness-only labels,
 - do not collapse the candidate library to output heuristics with no internal variables,
 - do not swap grouped-tuple bootstraps for row-wise bootstraps,
